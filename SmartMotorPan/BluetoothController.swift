@@ -160,11 +160,14 @@ class BluetoothController: NSObject, CBPeripheralDelegate, CBCentralManagerDeleg
         writeDataCommand(to: writeCharacteristic, command: "UA=0")
         writeDataCommand(to: writeCharacteristic, command: "UB=1")
         usleep(useconds_t(sleepSwitch))
+//        sleep(1)
         writeDataCommand(to: writeCharacteristic, command: "UA=1")
         writeDataCommand(to: writeCharacteristic, command: "UB=0")
         usleep(useconds_t(sleepMove))
+//        sleep(1)
         writeDataCommand(to: writeCharacteristic, command: "O=0")
         writeDataCommand(to: writeCharacteristic, command: "P=\(distance)")
+//        print(distance)
         writeDataCommand(to: writeCharacteristic, command: "G")
         
     }

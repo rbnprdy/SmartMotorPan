@@ -18,8 +18,8 @@ struct ContentView: View {
     @State private var KD: String = "200"
     @State private var KI: String = "110"
     @State private var KL: String = "1100"
-    @State private var sleepSwitch: String = ""
-    @State private var sleepMove: String = ""
+    @State private var sleepSwitch: String = "1000000"
+    @State private var sleepMove: String = "1000000"
     
     @State private var intAlertPresented = false
     @State private var beginAlertPresented = false
